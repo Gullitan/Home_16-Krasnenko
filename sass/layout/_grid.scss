@@ -1,0 +1,371 @@
+.header_nav {
+    text-align: -webkit-center;
+    .nav_container {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        .header_nav_element {
+            display: inline-block;
+            .element {
+                border-radius: 4px;
+                display: block;
+                padding: 5px 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: 0.8s;
+                &:hover {
+                    background-color:  #007FFF;
+                    color: white;
+                    transition: 0.8s;
+                }
+            }
+            .action{
+                background-color: #007FFF;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+
+
+ul.tabs {
+    margin: 0;
+    margin-left: 3px;
+    padding: 0;
+    list-style: none;
+    height: 32px;
+    width: 500px;
+}
+
+ul.tabs li {
+    border-radius: 3px;
+    float: left;
+    margin: 0;
+    margin-right: 2px;
+    cursor: pointer;
+    padding: 0 21px;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #DDDDDD;
+    background-color: #F6F6F6;
+    color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.tab_last {
+    border-right: 1px solid #DDDDDD;
+}
+
+ul.tabs li:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+ul.tabs li.active {
+    background-color: #007FFF;
+    color: white;
+    border-bottom: none;
+    display: block;
+}
+
+.tab_container {
+    margin: -1px 0 0 2px;
+    border: 1px solid #DDDDDD;
+    clear: both;
+    width: 100%;
+    background: #fff;
+    overflow: auto;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.tab_content {
+    padding: 20px;
+    display: none;
+}
+
+.tab_drawer_heading {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .tabs {
+        display: none;
+    }
+    .tab_drawer_heading {
+        background-color: #ccc;
+        color: #fff;
+        border-top: 1px solid #DDDDDD;
+        margin: 0;
+        padding: 5px 20px;
+        display: block;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .d_active {
+        background-color: #007FFF;
+        color: #fff;
+    }
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.wrap {
+    margin: 0 auto;
+    text-align: -webkit-center;
+}
+
+#tooltip, #tooltip_themeroller, #tooltip_age {
+    border-radius: 5px;
+    position: absolute;
+    margin: -49px 0;
+    padding: .5em;
+    background: #cec;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+
+#survol, #survol_themeroller, #survol_age {
+    cursor: pointer;
+}
+
+#tooltip_themeroller {
+    margin: -11px 0;
+}
+#tooltip_age {
+    margin: 28px -231px;
+}
+#tooltip.visible {
+    opacity: 1;
+}
+#tooltip_themeroller.visible {
+    opacity: 1;
+}
+#tooltip_age.visible {
+    opacity: 1;
+}
+
+.tooltips {
+    overflow: hidden;
+    max-width: 500px;
+    text-align: left;
+}
+.last_p {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+h1 {
+    color: #17445f;
+    margin-top: 100px;
+    text-align: center;
+}
+.accordion {
+    text-align: left;
+    max-width: 500px;
+    padding-left: 0;
+}
+.accordion li {
+    cursor: pointer;
+    list-style: none;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.accordion-trigger {
+    padding: 11px 25px;
+    margin: 1px 0 0;
+    background: #F6F6F6;
+    transition: .2s ease-in;
+    border: 1px solid #C5C5C5;
+    border-radius: 3px;
+}
+
+.accordion-trigger:hover {
+    background-color: #007FFF;
+    color: #fff;
+}
+
+.accordion-content {
+    margin: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: white;
+    border: 1px solid darkgrey;
+    margin-top: -1px;
+    padding: 5px 15px;
+
+}
+
+.list li {
+    list-style-type: initial;
+}
+section {
+    padding-bottom: 100px;
+}
+#tooltip-section {
+    overflow: hidden;
+    background-color: #f6f4c9;
+}
+#accordion-section {
+    overflow: hidden;
+    background-color: #cce6cb;
+}
+#tab-section {
+    overflow: hidden;
+    background-color: #82beb6;
+}
+#modal-window-section {
+    overflow: hidden;
+    background-color: #858a76;
+    .vex-content {
+        border-radius: 5px;
+        max-width: 500px;
+        border-top: 20px solid #bbb;
+        background: #f0f0f0;
+        color: #444;
+        padding: 1em;
+        position: relative;
+        margin: 0 auto;
+        .vex-dialog-form {
+            margin: 0;
+            margin-bottom: 50px;
+            .vex-dialog-message {
+                margin-bottom: .5em;
+                padding: 1em;
+                text-align: left;
+                height: 320px;
+                .reveal {
+                    opacity: 1;
+                    .examples {
+                        margin: auto;
+                        text-align: center;
+                        color: inherit;
+                        a {
+                            background: #3288e6;
+                            color: #fff;
+                            padding: 8px 18px 6px;
+                            cursor: pointer;
+                            margin: 70px 20px 20px 0;
+                            border-radius: 3px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .vex-dialog-input {
+                margin-bottom: 1em;
+            }
+            .vex.vex-theme-os .vex-dialog-button.vex-dialog-button-primary {
+                background: #3288e6;
+                color: #fff;
+            }
+            .vex.vex-theme-os .vex-dialog-button {
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+                border: 0;
+                float: right;
+                margin: 0 0 0 .5em;
+                font-family: inherit;
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                font-size: .8em;
+                line-height: 1em;
+                padding: .75em 2em;
+            }
+            .vex-dialog-button {
+            text-rendering: optimizeLegibility;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            }
+        }
+        .vex-close {
+            border-radius: 0 5px 0 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+        .vex.vex-theme-os .vex-close:before {
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            position: absolute;
+            content: "\00D7";
+            font-size: 26px;
+            font-weight: normal;
+            line-height: 31px;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            top: 3px;
+            right: 3px;
+            color: #bbb;
+            background: transparent;
+        }
+    }
+
+}
+
+.modal {
+    border-radius: 5px;
+    display: block;
+    width: 320px;
+    height: 200px;
+    position: relative;
+    top: -215px;
+    border: 1px solid darkgrey;
+    #dialog-form {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+#modal-window-section .vex-content .vex-dialog-form .vex-dialog-message {
+    margin-bottom: .5em;
+    padding: 1em;
+    text-align: left;
+    height: auto;
+}
+
+
+.close {
+    border-radius: 0 5px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: #3288e6;
+}
+.create-wind {
+    padding-top: 100px;
+}
+#login {
+    margin-top: 70px;
+}
+
+
+
+
+
